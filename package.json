@@ -1,0 +1,36 @@
+{
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN project",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sisimom/EComWebsite.git"
+  },
+  "author": "Sindhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sisimom/EComWebsite/issues"
+  },
+  "homepage": "https://github.com/sisimom/EComWebsite#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.3"
+  }
+}
