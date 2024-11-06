@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
+import store from "./store";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./assets/styles/bootstrap.custom.css";
 // import "./assets/styles/index.css";
@@ -13,7 +14,7 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
-import store from "./store";
+
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(

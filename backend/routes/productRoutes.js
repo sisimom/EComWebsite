@@ -5,7 +5,7 @@ const router = express.Router();
 import {
   getProducts,
   getProductById,
-} from "../controllers/productControler.js";
+} from "../controllers/productController.js";
 
 // router.get(
 //   "/",
